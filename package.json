@@ -1,0 +1,50 @@
+{
+  "name": "rnDemo",
+  "version": "0.1.0",
+  "private": true,
+  "devDependencies": {
+    "babel-eslint": "^8.2.2",
+    "eslint": "^4.18.1",
+    "eslint-config-standard": "^11.0.0",
+    "eslint-config-standard-react": "^6.0.0",
+    "eslint-plugin-react": "^7.7.0",
+    "jest-expo": "25.0.0",
+    "react-native-scripts": "1.11.1",
+    "react-test-renderer": "16.2.0"
+  },
+  "main": "./node_modules/react-native-scripts/build/bin/crna-entry.js",
+  "scripts": {
+    "start": "react-native-scripts start",
+    "eject": "react-native-scripts eject",
+    "start:android": "react-native-scripts android",
+    "start:ios": "react-native-scripts ios",
+    "lint": "eslint --fix ./src ./__tests__",
+    "test": "NODE_PATH=./ jest",
+    "test:watch": "NODE_PATH=./ jest --watchAll"
+  },
+  "jest": {
+    "preset": "jest-expo"
+  },
+  "dependencies": {
+    "expo": "^25.0.0",
+    "react": "16.2.0",
+    "react-native": "0.52.0"
+  },
+  "eslintConfig": {
+    "parser": "babel-eslint",
+    "env": {
+      "browser": true
+    },
+    "plugins": [
+      "react"
+    ],
+    "extends": [
+      "standard",
+      "standard-react"
+    ],
+    "globals": {
+      "expect": true,
+      "it": true
+    }
+  }
+}

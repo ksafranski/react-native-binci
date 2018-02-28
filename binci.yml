@@ -1,0 +1,15 @@
+from: mhart/alpine-node:8.9
+expose:
+  - 19000-19005:19000-19005
+before: |
+  apk update
+  apk add bash
+tasks:
+  env: env | sort
+  shell: /bin/sh
+  clean: rm -rf node_modules
+  install: yarn
+  lint: yarn lint
+  test: yarn test
+  test:watch: yarn test:watch
+  start: yarn start
