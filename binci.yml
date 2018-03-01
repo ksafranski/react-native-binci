@@ -1,4 +1,6 @@
 from: mhart/alpine-node:8.9
+env:
+  - REACT_NATIVE_PACKAGER_HOSTNAME=${REACT_NATIVE_PACKAGER_HOSTNAME}
 expose:
   - 19000-19005:19000-19005
 before: |
